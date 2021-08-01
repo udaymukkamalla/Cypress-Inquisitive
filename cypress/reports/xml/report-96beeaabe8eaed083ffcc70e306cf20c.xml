@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="9.1690" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-08-01T13:16:18" tests="0" file="cypress/integration/Lessons.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Lessons Pages" timestamp="2021-08-01T13:16:18" tests="1" time="9.1690" failures="0">
+    <testcase name="Lessons Pages Verify that an appropriate lessons page opens up as per user selection" time="9.1690" classname="Verify that an appropriate lessons page opens up as per user selection">
+    </testcase>
+  </testsuite>
+</testsuites>

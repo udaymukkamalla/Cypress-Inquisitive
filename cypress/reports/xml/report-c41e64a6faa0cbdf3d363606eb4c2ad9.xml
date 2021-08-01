@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="9.1290" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-08-01T13:16:02" tests="0" file="cypress/integration/JoinInquisitive.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Join Inquisitive Modal pop up Verification" timestamp="2021-08-01T13:16:02" tests="1" time="9.1290" failures="0">
+    <testcase name="Join Inquisitive Modal pop up Verification Verify that a modal pop up is displayed upon clicking Join Inquisitive" time="9.1290" classname="Verify that a modal pop up is displayed upon clicking Join Inquisitive">
+    </testcase>
+  </testsuite>
+</testsuites>

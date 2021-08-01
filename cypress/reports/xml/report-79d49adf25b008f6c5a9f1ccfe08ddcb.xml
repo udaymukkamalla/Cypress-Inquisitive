@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="17.4140" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-08-01T13:16:34" tests="0" file="cypress/integration/SignIn.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Sign in Validations" timestamp="2021-08-01T13:16:34" tests="3" time="17.4140" failures="0">
+    <testcase name="Sign in Validations Verify the system performs Required field validations in sign in page" time="8.4870" classname="Verify the system performs Required field validations in sign in page">
+    </testcase>
+    <testcase name="Sign in Validations Verify the system performs valid email address check in sign in page" time="5.0220" classname="Verify the system performs valid email address check in sign in page">
+    </testcase>
+    <testcase name="Sign in Validations Verify the system performs Incorrect login credentials check in sign in page" time="3.9050" classname="Verify the system performs Incorrect login credentials check in sign in page">
+    </testcase>
+  </testsuite>
+</testsuites>

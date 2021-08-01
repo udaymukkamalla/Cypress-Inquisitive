@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-01T13:15:44.373Z",
+    "end": "2021-08-01T13:15:55.126Z",
+    "duration": 10753,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e330e007-a18c-4c12-86ca-0e605044a286",
+      "title": "",
+      "fullFile": "cypress/integration/About.js",
+      "file": "cypress/integration/About.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "aeb1092b-c19d-44ac-bccc-eec004b30623",
+          "title": "About Page Verification",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify that the expected text is available in About Page",
+              "fullTitle": "About Page Verification Verify that the expected text is available in About Page",
+              "timedOut": null,
+              "duration": 10709,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\nhomepage.aboutBtn.click();\nhomepage.aboutInquisitiveBtn.click();\naboutpage.inquisitiveText.should('contain', _AboutData.AboutData.inquisitivetext);\ncy.log('Inquisitive text has been successfully verified');",
+              "err": {},
+              "uuid": "f5bc25dc-2564-498e-9b42-4db5f5a03bbf",
+              "parentUUID": "aeb1092b-c19d-44ac-bccc-eec004b30623",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f5bc25dc-2564-498e-9b42-4db5f5a03bbf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10709,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/json",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "yyyymmdd_HHMMss"
+      },
+      "version": "5.1.0"
+    }
+  }
+}

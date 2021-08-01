@@ -1,0 +1,146 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-01T13:16:34.890Z",
+    "end": "2021-08-01T13:16:52.448Z",
+    "duration": 17558,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a6044890-d0bb-44e6-b65f-780d18aeba4b",
+      "title": "",
+      "fullFile": "cypress/integration/SignIn.js",
+      "file": "cypress/integration/SignIn.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "67425333-501f-4b5d-9b53-c6318348eb7a",
+          "title": "Sign in Validations",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify the system performs Required field validations in sign in page",
+              "fullTitle": "Sign in Validations Verify the system performs Required field validations in sign in page",
+              "timedOut": null,
+              "duration": 8487,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\nhomepage.signInBtnHomePage.click();\nsigninpage.signInBtn.click();\nsigninpage.emailReqMsg.should('contain', _SignInData.SignInData.emailreq);\nsigninpage.pwdReqMsg.should('contain', _SignInData.SignInData.pwdreq);\ncy.log('Mandatory Email and Password validations');",
+              "err": {},
+              "uuid": "ed37101c-83c5-4d9e-9ee4-0edf8e3bbdb4",
+              "parentUUID": "67425333-501f-4b5d-9b53-c6318348eb7a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify the system performs valid email address check in sign in page",
+              "fullTitle": "Sign in Validations Verify the system performs valid email address check in sign in page",
+              "timedOut": null,
+              "duration": 5022,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\nhomepage.signInBtnHomePage.click();\nsigninpage.emailInput.type(_SignInData.SignInData.invalidemailinput);\nsigninpage.pwdInput.type(_SignInData.SignInData.pwdinput);\nsigninpage.signInBtn.click();\nsigninpage.invalidEmailMsg.should('contain', _SignInData.SignInData.emailinvalid);\ncy.log('Valid email check has been verified');",
+              "err": {},
+              "uuid": "4059a5c1-62a8-4683-b20d-2b03d9f8faec",
+              "parentUUID": "67425333-501f-4b5d-9b53-c6318348eb7a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify the system performs Incorrect login credentials check in sign in page",
+              "fullTitle": "Sign in Validations Verify the system performs Incorrect login credentials check in sign in page",
+              "timedOut": null,
+              "duration": 3905,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\nhomepage.signInBtnHomePage.click();\nsigninpage.emailInput.type(_SignInData.SignInData.emailinput);\nsigninpage.pwdInput.type(_SignInData.SignInData.pwdinput);\nsigninpage.signInBtn.click();\nsigninpage.invalidCredMsg.should('contain', _SignInData.SignInData.incorrectcred);\ncy.log('Incorrect credentials check has been verified');",
+              "err": {},
+              "uuid": "c74f5c90-e0cf-45d1-bcc7-54d2704b2b21",
+              "parentUUID": "67425333-501f-4b5d-9b53-c6318348eb7a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ed37101c-83c5-4d9e-9ee4-0edf8e3bbdb4",
+            "4059a5c1-62a8-4683-b20d-2b03d9f8faec",
+            "c74f5c90-e0cf-45d1-bcc7-54d2704b2b21"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 17414,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/json",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "yyyymmdd_HHMMss"
+      },
+      "version": "5.1.0"
+    }
+  }
+}
